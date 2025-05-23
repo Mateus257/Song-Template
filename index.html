@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFlow - Discover & Share Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="./img/audiologo.png" alt="MusicFlow" class="logo-icon">
+                <span>MusicFlow</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                    <li><a href="#"><i class="fas fa-compass"></i> <span>Discover</span></a></li>
+                    <li><a href="#"><i class="fas fa-music"></i> <span>My Library</span></a></li>
+                    <li><a href="#"><i class="fas fa-heart"></i> <span>Favorites</span></a></li>
+                    <li><a href="#"><i class="fas fa-list"></i> <span>Playlists</span></a></li>
+                    <li><a href="#"><i class="fas fa-microphone"></i> <span>Artists</span></a></li>
+                </ul>
+            </nav>
+            
+            <div class="playlist-section">
+                <div class="section-header">
+                    <h3>Your Playlists</h3>
+                    <button class="add-playlist"><i class="fas fa-plus"></i></button>
+                </div>
+                <ul class="playlist-list">
+                    <li><a href="#"><i class="fas fa-list-music"></i> <span>Workout Mix</span></a></li>
+                    <li><a href="#"><i class="fas fa-list-music"></i> <span>Chill Vibes</span></a></li>
+                    <li><a href="#"><i class="fas fa-list-music"></i> <span>Road Trip</span></a></li>
+                    <li><a href="#"><i class="fas fa-list-music"></i> <span>Study Focus</span></a></li>
+                </ul>
+            </div>
+            
+            <div class="user-profile">
+                <div class="profile-pic">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                </div>
+                <div class="profile-info">
+                    <span class="username">Sarah Johnson</span>
+                    <span class="user-status">Premium Member</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for songs, artists, or playlists...">
+                </div>
+                <div class="user-actions">
+                    <button class="upgrade-btn">Upgrade to Pro</button>
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="hero-banner">
+                <div class="banner-content">
+                    <h1>Discover Your Next Favorite Song</h1>
+                    <p>Earn rewards by sharing high-quality music with friends and the MusicFlow community.</p>
+                    <button class="cta-button">Start Exploring</button>
+                </div>
+                <div class="banner-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1.2M+</span>
+                        <span class="stat-label">Monthly Listeners</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">45K+</span>
+                        <span class="stat-label">Artists</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">120K+</span>
+                        <span class="stat-label">Tracks</span>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="now-playing-bar">
+                <iframe id="spotify-player" style="border-radius:12px" 
+                        src="https://open.spotify.com/embed/track/5p9XWUdvbUzmPCukOmwoU3" 
+                        width="100%" height="80" frameborder="0" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                </iframe>
+            </div>
+            
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Recently Played</h2>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+                <div class="track-grid">
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Popular Genres</h2>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+                <div class="genre-grid">
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Featured Playlists</h2>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+                <div class="playlist-grid">
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Recommended Artists</h2>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+                <div class="artist-grid">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./javaScript/script.js"></script>
+</body>
+</html>
